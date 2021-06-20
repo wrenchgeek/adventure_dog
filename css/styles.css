@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+#menu-bar {
+  background-color: #1a5632;
+  position: sticky;
+  top: 0px;
+}
+
+#menu-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.menu-item {
+  display: flex;
+  margin: 1em;
+  font-size: 12pt;
+  font-family: Helvetica;
+  color: #fff;
+}
+
+.menu-item:hover {
+  color: #fc7f30;
+  cursor: pointer;
+}
+
+#header {
+  background-color: #1a5632;
+  display: flex;
+  justify-content: center;
+}
+
+#header-logo {
+  height: 200px;
+}
+
+#header-name {
+  height: 122px;
+  padding-top: 80px;
+}
+
+.header-img {
+  padding: 50px 30px;
+}
+
+#copy-container {
+  margin: 0 200px;
+  padding: 20px;
+  background-color: beige;
+  display: none;
+}
+
+#carousel-container {
+  background-color: #b5d7eb;
+  height: 700px;
+}
+
+#carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.car-img {
+  height: 500px;
+}
+
+.carousel-button {
+  color: #fff;
+  font-size: 120pt;
+}
+
+#carousel-tagline {
+  color: #fff;
+  background-color: orange;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+
+
