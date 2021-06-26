@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 
   console.log( "ready!" );
-
   var headerHeight = $('#header').height();
 
   $('.menu-item:first-child').click(function() {

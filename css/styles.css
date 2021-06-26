@@ -3,14 +3,23 @@ html {
 }
 
 body {
-  margin: 0px
+  background-color: #000000;
+  margin: 0px;
+  max-width: 1244px;
+  margin: auto;
 }
 
 ul {
   padding-inline-start: 0px;
 }
 
+@font-face {
+  font-family: Hiker;
+  src: url(../fonts/Hiker.otf);
+}
+
 #menu-bar {
+  background-color: #008441;
   background-color: #1a5632;
   position: sticky;
   top: 0px;
@@ -37,6 +46,7 @@ ul {
 }
 
 #header {
+  background-color: #008441;
   background-color: #1a5632;
   display: flex;
   justify-content: center;
@@ -55,12 +65,43 @@ ul {
   padding: 50px 30px;
 }
 
+
+
 #copy-container {
-  margin: 0 200px;
-  padding: 20px;
+  padding: 50px 50px;
   background-color: beige;
+//  display: none;
+}
+
+
+#copy-container > div {
   display: none;
 }
+
+#copy-container > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+#services-text {
+  margin-left: 50px;
+}
+
+
+#services-photo-1 {
+  display: inline-block;
+  width: 320px;
+  
+}
+
+#services-text > h1 {
+  font-family: Hiker, fantasy;
+}
+
+
+
 
 #carousel-container {
   background-color: #b5d7eb;
@@ -68,10 +109,6 @@ ul {
 }
 
 #slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-//  padding: 50px;
 }
 
 #carousel-window {
@@ -90,9 +127,7 @@ ul {
 }
 
 .carousel-frame {
-  height: 400px;
-  padding: 50px;
-
+  height: 700px;
 }
 
 
@@ -113,6 +148,9 @@ ul {
 .carousel-button {
   color: #fff;
   font-size: 120pt;
+
+display: none;
+
 }
 
 .carousel-button:hover {
