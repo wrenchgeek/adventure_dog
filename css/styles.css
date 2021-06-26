@@ -18,6 +18,20 @@ ul {
   src: url(../fonts/Hiker.otf);
 }
 
+@font-face {
+  font-family: Circe;
+  src: url(../fonts/CRC35.otf);
+}
+
+@font-face {
+  font-family: CirceBold;
+  src: url(../fonts/CRC55.otf);
+}
+
+.circe-bold {
+  font-family: CirceBold, fantacy;
+}
+
 #menu-bar {
   background-color: #008441;
   background-color: #1a5632;
@@ -68,7 +82,7 @@ ul {
 
 
 #copy-container {
-  padding: 50px 50px;
+  padding: 25px 100px;
   background-color: beige;
 //  display: none;
 }
@@ -79,29 +93,40 @@ ul {
 }
 
 #copy-container > div:nth-child(2) {
+  display: block;
+}
+
+.services-layer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
+  margin: 25px 0;
 }
 
 
-#services-text {
-  margin-left: 50px;
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-#services-photo-1 {
-  display: inline-block;
-  width: 320px;
-  
-}
-
-#services-text > h1 {
+.services-text > h1 {
   font-family: Hiker, fantasy;
 }
 
+.services-text > p {
+  font-family: Circe, fantasy;
+}
 
 
+.services-photo {
+  display: inline-block;
+  width: 320px;
+}
+
+.services-layer-divider {
+  min-width: 150px;
+}
 
 #carousel-container {
   background-color: #b5d7eb;
