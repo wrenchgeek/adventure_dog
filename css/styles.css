@@ -82,8 +82,10 @@ ul {
 
 
 #copy-container {
+  font-size: 16pt;
+  color: #1a5632;
   padding: 25px 100px;
-  background-color: beige;
+  background-color: #c2ddc8;
 //  display: none;
 }
 
@@ -118,8 +120,14 @@ ul {
   font-family: Circe, fantasy;
 }
 
+.services-photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .services-photo {
+  border-image: url(../border/arrow-feathers-1.png) 30 round;
   display: inline-block;
   width: 320px;
 }
@@ -129,8 +137,7 @@ ul {
 }
 
 #carousel-container {
-  background-color: #b5d7eb;
-  height: 900px;
+
 }
 
 #slider {
@@ -155,7 +162,15 @@ ul {
   height: 700px;
 }
 
-
+.carousel-text {
+  position: absolute;
+  color: #fff;
+  font-family: 'Hiker';
+  font-size: 68px;
+  margin-left: 74px;
+  margin-top: 90px;
+  opacity: .8;
+}
 
 //.carousel-frame {
 //  display: none;
@@ -182,15 +197,63 @@ display: none;
   cursor: pointer;
 }
 
-#carousel-tagline {
-  color: #fff;
-  background-color: orange;
-  width: 300px;
-  text-align: center;
-  margin: auto;
-  padding: 20px;
-  border-radius: 5px;
+
+
+
+
+#carousel-cta-container {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/wood_grain_background.jpeg");
+  background-size: cover;
 }
+
+#carousel-cta-button {
+  display: inline-block;
+  background-color: #fc7f30;
+  margin: 44px 0px;
+  height: 66px;
+  width: 200px;
+  border-radius: 10px 4px 4px 10px;
+  border: 2px #fff solid;
+}
+
+#carousel-cta-text {
+  color: #fff;
+  font-family: Hiker;
+  font-size: 21px;
+  min-width: 162px;
+  line-height: 71px;
+  margin-left: 14px;
+  
+}
+
+.cta-caret {
+  background-color: #fc7f30;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -41px;
+  top: -63px;
+  border-radius: 4px 4px 4px 0;
+  border-top: 2px #fff solid;
+  border-right: 2px #fff solid;
+}
+
+#footer {
+  background-color: #1a5632;
+}
+
+#footer-logo {
+  width: 111px;
+  margin: 20px 96px;
+}
+
+
+
+
 
 
 
