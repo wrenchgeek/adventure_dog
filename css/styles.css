@@ -37,7 +37,7 @@ ul {
   background-color: #1a5632;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #menu-list {
@@ -49,9 +49,9 @@ ul {
 .menu-item {
   display: flex;
   margin: 1em;
-  font-size: 12pt;
-  font-family: Helvetica;
-  color: #fff;
+  font-size: 14pt;
+  font-family: Circe;
+  color: #b6e7eb;
 }
 
 .menu-item:hover {
@@ -79,24 +79,21 @@ ul {
   padding: 50px 30px;
 }
 
-
-
 #copy-container {
   font-size: 16pt;
   color: #1a5632;
   padding: 25px 100px;
   background-color: #c2ddc8;
-//  display: none;
-}
-
-
-#copy-container > div {
   display: none;
 }
 
-#copy-container > div:nth-child(2) {
-  display: block;
-}
+//#copy-container > div {
+//  display: none;
+//}
+
+//#copy-container > div:nth-child(2) {
+//  display: block;
+//}
 
 .services-layer {
   display: flex;
@@ -141,11 +138,12 @@ ul {
 }
 
 #slider {
+  position: relative;
 }
 
 #carousel-window {
   overflow: hidden;
-
+  position: relative;
 }
 
 #carousel-slide {
@@ -154,8 +152,7 @@ ul {
   align-items: center;
   position: relative;
   left: 0px;
-  transition: left 0.3s;
-
+  transition: left 0.8s;
 }
 
 .carousel-frame {
@@ -172,15 +169,6 @@ ul {
   opacity: .8;
 }
 
-//.carousel-frame {
-//  display: none;
-//}
-//
-//.carousel-frame:first-child {
-//  display: inline-block;
-//  width: 500px;
-//}
-
 .car-img {
   height: inherit;
 }
@@ -188,18 +176,27 @@ ul {
 .carousel-button {
   color: #fff;
   font-size: 120pt;
-
-display: none;
-
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  opacity: .6;
 }
+
+#carousel-button-left {
+  display: none;
+  left: 50px;
+}
+
+#carousel-button-right {
+  right: 50px; 
+}
+
+
+
 
 .carousel-button:hover {
   cursor: pointer;
 }
-
-
-
-
 
 #carousel-cta-container {
   display: flex;
@@ -210,12 +207,14 @@ display: none;
 
 #carousel-cta-button {
   display: inline-block;
+  position: relative;
   background-color: #fc7f30;
   margin: 44px 0px;
   height: 66px;
   width: 200px;
   border-radius: 10px 4px 4px 10px;
   border: 2px #fff solid;
+  z-index: 1;
 }
 
 #carousel-cta-text {
@@ -235,11 +234,12 @@ display: none;
   height: 48px;
   transform: rotate(45deg);
   position: absolute;
-  right: -41px;
-  top: -63px;
+  right: -25px;
+  top: 8px;
   border-radius: 4px 4px 4px 0;
   border-top: 2px #fff solid;
   border-right: 2px #fff solid;
+  z-index: -1;
 }
 
 #footer {
