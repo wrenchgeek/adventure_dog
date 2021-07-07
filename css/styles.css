@@ -84,16 +84,16 @@ ul {
   color: #1a5632;
   padding: 25px 100px;
   background-color: #c2ddc8;
-//  display: none;
-}
-
-#copy-container > div {
   display: none;
 }
 
-#copy-container > div:nth-child(3) {
-  display: block;
-}
+//#copy-container > div {
+//  display: none;
+//}
+//
+//#copy-container > div:nth-child(3) {
+//  display: block;
+//}
 
 .services-layer {
   display: flex;
@@ -195,6 +195,7 @@ ul {
 
 .carousel-frame {
   height: 700px;
+  position: relative;
 }
 
 .carousel-text {
@@ -202,9 +203,25 @@ ul {
   color: #fff;
   font-family: 'Hiker';
   font-size: 68px;
+  opacity: .8;
+}
+
+#carousel-text-1 {
   margin-left: 74px;
   margin-top: 90px;
-  opacity: .8;
+}
+
+#carousel-text-3 {
+  margin-left: 74px;
+  margin-top: 90px;
+  opacity: 1;
+}
+
+#carousel-text-5 {
+  left: 0;
+  right: 0;
+  margin: 90px auto;
+  width: 448px;
 }
 
 .car-img {
