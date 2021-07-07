@@ -84,16 +84,16 @@ ul {
   color: #1a5632;
   padding: 25px 100px;
   background-color: #c2ddc8;
+//  display: none;
+}
+
+#copy-container > div {
   display: none;
 }
 
-//#copy-container > div {
-//  display: none;
-//}
-
-//#copy-container > div:nth-child(2) {
-//  display: block;
-//}
+#copy-container > div:nth-child(3) {
+  display: block;
+}
 
 .services-layer {
   display: flex;
@@ -132,6 +132,44 @@ ul {
 .services-layer-divider {
   min-width: 150px;
 }
+
+
+
+.pack-layer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px
+}
+
+.pack-layer-divider {
+  min-width: 60px;
+}
+
+.profile-name {
+  font-family: Hiker;
+  margin: 0px;
+}
+
+.profile-title {
+  font-family: Circe;
+  font-size: 1em;
+  margin: 0px;
+}
+
+.pack-text > p {
+  font-family: Circe;
+  font-size: 14pt;
+}
+
+.profile-photo {
+  width: 400px;
+  border-radius: 100%;
+}
+
+
+
+
+
 
 #carousel-container {
 
@@ -190,9 +228,6 @@ ul {
 #carousel-button-right {
   right: 50px; 
 }
-
-
-
 
 .carousel-button:hover {
   cursor: pointer;

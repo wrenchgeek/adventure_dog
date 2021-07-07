@@ -42,11 +42,20 @@ $( document ).ready(function() {
     if (carouselIndex > 0) {
       carouselIndex--
     }
+    if (carouselIndex == 0) {
+      $('#carousel-button-left').fadeOut();
+    }
+    if (carouselIndex < 4) {
+      $('#carousel-button-right').fadeIn();
+    }
     $('#carousel-slide').css('left', -1 * carouselIndex * $('#carousel-window').width() - 1);
   });
   $('#carousel-button-right').click(function() {
     if (carouselIndex < 4) {
       carouselIndex++
+    }
+    if (carouselIndex == 4) {
+      $('#carousel-button-right').fadeOut();
     }
     if (carouselIndex > 0) {
       $('#carousel-button-left').fadeIn();
