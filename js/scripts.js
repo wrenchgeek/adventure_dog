@@ -10,10 +10,28 @@ $( document ).ready(function() {
 
 
   $('.menu-item:not(:first-child)').click(function() {
-    $('#copy-container > div').hide();
     var menuId = event.target.id;
-    $('#copy-container').slideDown('fast', function() {
 
+    $('#copy-container > div').hide();
+
+//    switch (menuId) {
+//      case "menu-about":
+//        $('#about-copy').css('display': 'initial', 'visibility': 'visible');
+//        break;
+//      case "menu-services":
+//        $('#services-copy').css('display': 'initial', 'visibility': 'visible');
+//        break;
+//      case "menu-pack":
+//        $('#pack-copy').css('display': 'initial', 'visibility': 'visible');
+//        break;
+//      case "menu-contact":
+//        $('#contact-copy').css('display': 'initial', 'visibility': 'visible');
+//        break;
+//    }
+
+
+
+    $('#copy-container').slideDown('fast', function() {
 
       switch (menuId) {
         case "menu-about":
@@ -30,7 +48,6 @@ $( document ).ready(function() {
           break;
       }
     });
-
 
   });
 

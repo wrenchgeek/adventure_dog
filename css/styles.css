@@ -18,6 +18,11 @@ ul {
   src: url(../fonts/Hiker.otf);
 }
 
+//  @font-face {
+//    font-family: HikerDistressed;
+//    src: url(../fonts/Hiker\ Distressed.otf);
+//  }
+
 @font-face {
   font-family: Circe;
   src: url(../fonts/CRC35.otf);
@@ -84,16 +89,34 @@ ul {
   color: #1a5632;
   padding: 25px 100px;
   background-color: #c2ddc8;
+//  display: none;
+}
+
+#copy-container > div {
+//  visibility: hidden;
   display: none;
 }
 
-//#copy-container > div {
-//  display: none;
-//}
-//
-//#copy-container > div:nth-child(3) {
-//  display: block;
-//}
+#copy-container > div:nth-child(1) {
+  display: block;
+}
+
+#about-copy {
+  background-image: url(../img/sandpaws2.png);
+}
+
+
+#about-copy > h1 {
+  font-family: Hiker;
+}
+
+
+#about-copy > p {
+  font-family: Circe;
+}
+
+
+
 
 .services-layer {
   display: flex;
@@ -133,8 +156,6 @@ ul {
   min-width: 150px;
 }
 
-
-
 .pack-layer {
   display: flex;
   justify-content: space-between;
@@ -165,11 +186,6 @@ ul {
   width: 400px;
   border-radius: 100%;
 }
-
-
-
-
-
 
 #carousel-container {
 
@@ -203,25 +219,24 @@ ul {
   color: #fff;
   font-family: 'Hiker';
   font-size: 68px;
-  opacity: .8;
 }
 
 #carousel-text-1 {
   margin-left: 74px;
   margin-top: 90px;
-}
-
+  opacity: 0.9;
+} 
 #carousel-text-3 {
   margin-left: 74px;
   margin-top: 90px;
-  opacity: 1;
 }
 
 #carousel-text-5 {
   left: 0;
   right: 0;
   margin: 90px auto;
-  width: 448px;
+  width: 634px;
+  opacity: .8;
 }
 
 .car-img {
@@ -230,11 +245,12 @@ ul {
 
 .carousel-button {
   color: #fff;
-  font-size: 120pt;
+  font-size: 108pt;
   position: absolute;
   z-index: 1;
-  top: 100px;
+  top: 96px;
   opacity: .6;
+  font-family: 'Circe';
 }
 
 #carousel-button-left {
@@ -269,13 +285,17 @@ ul {
   z-index: 1;
 }
 
+#carousel-cta-button:hover {
+  cursor: pointer;
+}
+
 #carousel-cta-text {
   color: #fff;
   font-family: Hiker;
   font-size: 21px;
   min-width: 162px;
   line-height: 71px;
-  margin-left: 14px;
+  margin-left: 25px;
   
 }
 
