@@ -89,7 +89,7 @@ ul {
   color: #1a5632;
   padding: 25px 100px;
   background-color: #c2ddc8;
-//  display: none;
+  display: none;
 }
 
 #copy-container > div {
@@ -97,9 +97,9 @@ ul {
   display: none;
 }
 
-#copy-container > div:nth-child(1) {
-  display: block;
-}
+//#copy-container > div:nth-child(1) {
+//  display: block;
+//}
 
 #about-copy {
   background-image: url(../img/sandpaws2.png);
@@ -115,16 +115,12 @@ ul {
   font-family: Circe;
 }
 
-
-
-
 .services-layer {
   display: flex;
   justify-content: flex-start;
   align-content: center;
   margin: 25px 0;
 }
-
 
 .services-text {
   display: flex;
@@ -296,7 +292,6 @@ ul {
   min-width: 162px;
   line-height: 71px;
   margin-left: 25px;
-  
 }
 
 .cta-caret {
@@ -315,13 +310,77 @@ ul {
 }
 
 #footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #1a5632;
+  color: #b6d7eb;
+  padding: 60px 60px 30px;
 }
 
 #footer-logo {
-  width: 111px;
-  margin: 20px 96px;
+  width: 156px;
 }
+
+.footer-contact-info {
+  font-family: Circe;
+  color: #b6d7eb;
+  text-decoration: none;
+  margin: 6px 0px;
+}
+
+#footer-logo-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  width: 222px;
+}
+
+.footer-headline {
+  font-family: Circe;
+  font-weight: normal;
+  font-size: 14pt;
+}
+
+.footer-link-container {
+  display: flex;
+  margin-left: 4px;
+}
+
+.footer-social-link {
+  margin-right: 16px;
+}
+
+.footer-social-logo {
+  width: 34px;
+  border-radius: 7px;
+}
+
+#footer-copyright {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1a5632;
+  color: #b6d7eb;
+  padding: 0px 70px;
+  font-size: 10pt;
+  font-family: Circe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
