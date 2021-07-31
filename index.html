@@ -138,6 +138,29 @@ A San Francisco native and former motorcycle mechanic turned techie turned dog p
       <div id="contact-copy" class="content-copy">
         <h1>SAY HELLO TO MY LITTLE FRIEND</h1>
         <h1>THIS IS THE CONTACT PAGE</h1>
+
+<form method="post" name="contact_form" action="contact-form-handler.php">
+    Your Name:
+    <input type="text" name="name">
+
+    Email Address:
+    <input type="text" name="email">
+
+    Message:
+    <textarea name="message"></textarea>
+
+    <input type="submit" value="Submit">
+</form>	
+
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+
+
       </div>
     </div>
 
